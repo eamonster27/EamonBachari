@@ -1,0 +1,212 @@
+/*-----BASE-----*/
+/*-----BASE-----*/
+/*-----BASE-----*/
+body {
+  margin: 0px;
+  font-family: sans-serif;
+  position: absolute;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+
+header, footer {
+  height: 50px;
+  display: flex;
+}
+
+header {
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #34495e;
+}
+
+header > h3 {
+  margin-left: 10px;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+footer {
+  flex-flow: column nowrap;
+  justify-content: center;
+  background-color: #95a5a6;
+  margin-bottom: -60px;
+}
+
+#header-nav > ul {
+  justify-content: flex-end;
+  margin: 0px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#footer-nav > ul {
+  justify-content: center;
+  margin: 0px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#footer-nav li, #header-nav li {
+  list-style-type: none;
+  margin-right: 10px;
+  font-size: 17px;
+}
+
+#header-nav a {
+  text-decoration: none;
+  color: white;
+}
+
+#header-nav a:hover {
+  border-bottom-style: solid;
+  border-bottom-color: white;
+}
+/*-----HOMEPAGE-----*/
+/*-----HOMEPAGE-----*/
+/*-----HOMEPAGE-----*/
+.homepage > h3 {
+  margin: 0px 10px 8px 10px;
+  padding-top: 50px;
+  color: #ecf0f1;
+  text-align: center;
+  font-weight: lighter;
+}
+
+#pic-bio {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding-top: 20px;
+
+}
+
+#pic-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+#title {
+  text-align: center;
+}
+
+#education {
+  text-align: center;
+}
+
+#pic {
+  background-image: url("../images/Eamon.png");
+  background-position: center;
+  background-size: cover;
+  height: 180px;
+  width: 170px;
+  margin: 10px;
+  border-radius: 100px;
+}
+
+#blog a {
+  text-decoration: none;
+  color: #2ecc71;
+}
+
+#bio {
+  margin-right: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  color: #ecf0f1;
+  font-weight: lighter;
+  width: 60%;
+}
+
+#bio b {
+  color: #9b59b6;
+}
+
+#title, #education {
+  color: #ecf0f1;
+  font-weight: lighter;
+}
+
+.featured-projects {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin: 10px 0px 20px 0px;
+  padding-bottom: 20px;
+}
+
+.project {
+  width: 30%;
+  height: 200px;
+  border-style: solid;
+  border-color: #ecf0f1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.proj-name h5 {
+  margin: 0px;
+}
+
+.proj-name a {
+  text-decoration: none;
+  color: #9b59b6;
+}
+
+.thumbnail > div {
+  background-position: center;
+  background-size: cover;
+  width: 125px;
+  height: 150px;
+  margin-top: 5px;
+}
+
+#proj-img-1 {
+  background-image: url("../images/soundcloud.png");
+}
+
+#proj-img-2 {
+  background-image: url("../images/mysteryword.png");
+}
+
+#proj-img-3 {
+  background-image: url("../images/calculator.png");
+}
+
+#footer-nav div {
+  background-position: center;
+  background-size: cover;
+  height: 32px;
+  width: 32px;
+  margin: 10px;
+}
+
+#github {
+  background-image: url("../images/github.ico");
+}
+
+#linkedin {
+  background-image: url("../images/linkedin.png");
+}
+
+#resume {
+  background-image: url("../images/resume.png");
+}
