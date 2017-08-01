@@ -67,15 +67,53 @@ footer {
   font-size: 17px;
 }
 
-#header-nav a {
+header a {
   text-decoration: none;
   color: white;
 }
 
-#header-nav a:hover {
-  border-bottom-style: solid;
-  border-bottom-color: white;
+.dropbtn {
+  background-color: #34495e;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ecf0f1;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #34495e;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #2980b9;
+  color: #ecf0f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  border-top-style: solid;
+  border-top-color: white;
+}
+
 /*-----HOMEPAGE-----*/
 /*-----HOMEPAGE-----*/
 /*-----HOMEPAGE-----*/
