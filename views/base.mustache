@@ -6,6 +6,21 @@
     <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
+
+    <div id="container" class="container">
+      <div id="output"></div>
+      <div style="display:none;" id="controls"></div>
+      <footer>
+        <nav id="footer-nav">
+          <ul>
+            <li><a href="https://github.com/eamonster27"><div id="github"></div></a></li>
+            <li><a href="https://www.linkedin.com/in/eamonbachari/"><div id="linkedin"></div></a></li>
+            <li><a href="images/Resume.pdf"><div id="resume"></div></a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+
     <header>
       <h3><a href="/">Eamon Bachari</a></h3>
       <nav id="header-nav">
@@ -41,14 +56,8 @@
 
     {{{yield}}}
 
-    <footer>
-      <nav id="footer-nav">
-        <ul>
-          <li><a href="https://github.com/eamonster27"><div id="github"></div></a></li>
-          <li><a href="https://www.linkedin.com/in/eamonbachari/"><div id="linkedin"></div></a></li>
-          <li><a href="images/Resume.pdf"><div id="resume"></div></a></li>
-        </ul>
-      </nav>
-    </footer>
+    <script src="js/dat.gui.min.js"></script>
+    <script src="js/fss.min.js"></script>
+    <script src="js/background.js"></script>
   </body>
 </html>

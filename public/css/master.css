@@ -1,10 +1,15 @@
-/*-----BASE-----*/
-/*-----BASE-----*/
-/*-----BASE-----*/
+/*--------MOBILE SIZE--------*/
+/*--------MOBILE SIZE--------*/
+/*--------MOBILE SIZE--------*/
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 body {
   margin: 0px;
   font-family: sans-serif;
-  position: absolute;
+  height: 100%;
 }
 
 .overlay {
@@ -19,7 +24,6 @@ body {
   width: 100%;
   z-index: -1;
 }
-
 
 header, footer {
   height: 50px;
@@ -41,10 +45,8 @@ header > h3 {
 }
 
 footer {
-  flex-flow: column nowrap;
   justify-content: center;
   background-color: #95a5a6;
-  margin-bottom: -60px;
 }
 
 #header-nav > ul {
@@ -117,7 +119,7 @@ header a {
 /*-----HOMEPAGE-----*/
 /*-----HOMEPAGE-----*/
 /*-----HOMEPAGE-----*/
-.homepage > h3 {
+.homepage > h2 {
   margin: 0px 10px 8px 10px;
   padding-top: 50px;
   color: #ecf0f1;
@@ -127,10 +129,10 @@ header a {
 
 #pic-bio {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
+  align-items: center;
   justify-content: space-around;
   padding-top: 20px;
-
 }
 
 #pic-container {
@@ -151,8 +153,8 @@ header a {
   background-image: url("../images/Eamon.png");
   background-position: center;
   background-size: cover;
-  height: 180px;
-  width: 170px;
+  height: 210px;
+  width: 200px;
   margin: 10px;
   border-radius: 100px;
 }
@@ -169,7 +171,7 @@ header a {
   justify-content: center;
   color: #ecf0f1;
   font-weight: lighter;
-  width: 60%;
+  width: 80%;
 }
 
 #bio b {
@@ -183,21 +185,23 @@ header a {
 
 .featured-projects {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  margin: 10px 0px 20px 0px;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 0px 20px 0px;
   padding-bottom: 20px;
 }
 
 .project {
-  width: 30%;
-  height: 200px;
+  width: 70%;
+  height: 275px;
   border-style: solid;
   border-color: #ecf0f1;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column-reverse nowrap;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .proj-name h5 {
@@ -212,9 +216,9 @@ header a {
 .thumbnail > div {
   background-position: center;
   background-size: cover;
-  width: 125px;
-  height: 150px;
-  margin-top: 5px;
+  width: 175px;
+  height: 200px;
+  margin-bottom: 15px;
 }
 
 #proj-img-1 {
@@ -247,4 +251,152 @@ header a {
 
 #resume {
   background-image: url("../images/resume.png");
+}
+
+/*--------TABLET SIZE--------*/
+/*--------TABLET SIZE--------*/
+/*--------TABLET SIZE--------*/
+@media (min-width:545px) {
+  .featured-projects {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px 0px 20px 0px;
+    padding-bottom: 20px;
+  }
+
+  .project {
+    width: 40%;
+    height: 310px;
+    border-style: solid;
+    border-color: #ecf0f1;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .thumbnail > div {
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 250px;
+  }
+
+}
+/*--------DESKTOP SIZE--------*/
+/*--------DESKTOP SIZE--------*/
+/*--------DESKTOP SIZE--------*/
+@media (min-width:775px) {
+  /*-----HOMEPAGE-----*/
+  /*-----HOMEPAGE-----*/
+  /*-----HOMEPAGE-----*/
+  .homepage > h2 {
+    margin: 0px 10px 8px 10px;
+    padding-top: 50px;
+    color: #ecf0f1;
+    text-align: center;
+    font-weight: lighter;
+  }
+
+  #pic-bio {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding-top: 20px;
+    font-size: 20px;
+  }
+
+  #pic {
+    background-image: url("../images/Eamon.png");
+    background-position: center;
+    background-size: cover;
+    height: 210px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 100px;
+  }
+
+  #bio {
+    margin-right: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    color: #ecf0f1;
+    font-weight: lighter;
+    width: 60%;
+    font-size: 24px;
+  }
+
+  .featured-projects {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 10px 0px 20px 0px;
+    padding-bottom: 20px;
+  }
+
+  .project {
+    width: 28%;
+    height: 350px;
+    border-style: solid;
+    border-color: #ecf0f1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .proj-name h2 {
+    margin: 0px;
+  }
+
+  .thumbnail > div {
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 250px;
+    margin-top: 5px;
+  }
+
+  #footer-nav div {
+    background-position: center;
+    background-size: cover;
+    height: 32px;
+    width: 32px;
+    margin: 10px;
+  }
+}
+/*--------LARGE DESKTOP SIZE--------*/
+/*--------LARGE DESKTOP SIZE--------*/
+/*--------LARGE DESKTOP SIZE--------*/
+@media (min-width:1100px) {
+  .featured-projects {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 10px 0px 20px 0px;
+    padding-bottom: 20px;
+  }
+
+  .project {
+    width: 26%;
+    height: 400px;
+    border-style: solid;
+    border-color: #ecf0f1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .thumbnail > div {
+    background-position: center;
+    background-size: cover;
+    width: 275px;
+    height: 300px;
+    margin-top: 5px;
+  }
 }
