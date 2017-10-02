@@ -119,6 +119,12 @@ header a {
 /*-----HOMEPAGE-----*/
 /*-----HOMEPAGE-----*/
 /*-----HOMEPAGE-----*/
+.homepage {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
 .homepage > h2 {
   margin: 0px 10px 8px 10px;
   padding-top: 50px;
@@ -188,7 +194,7 @@ header a {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-between;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 20 0px;
   padding-bottom: 20px;
 }
 
